@@ -8,17 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Alime - Photography HTML Template</title>
+    <title>Home - Matheus Rocha</title>
 
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/favicon.png">
 
     <!-- Stylesheet -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
+    <script src="js/jquery.min.js"></script>
+
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader"></div>
@@ -32,10 +38,12 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <!-- Close -->
-                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i
+                                class="ti-close"></i></button>
                         <!-- Form -->
                         <form action="index.html" method="post">
-                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
+                            <input type="search" name="top-search-bar" class="form-control"
+                                placeholder="Search and hit enter...">
                             <button type="submit">Search</button>
                         </form>
                     </div>
@@ -54,7 +62,7 @@
                     <nav class="classy-navbar justify-content-between" id="alimeNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+                        <a class="nav-brand text-white" href="./index.html">Matheus Rocha</a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -71,32 +79,31 @@
                             <div class="classynav">
                                 <ul id="nav">
                                     <li class="active"><a href="./index.html">Home</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a href="#">Resumé</a>
                                         <ul class="dropdown">
-                                            <li><a href="./index.html">- Home</a></li>
-                                            <li><a href="./about.html">- About</a></li>
-                                            <li><a href="./gallery.html">- Gallery</a></li>
+                                            <li><a href="./index.html">- Portuguese</a></li>
+                                            <li><a href="./about.html">- English</a></li>
+                                            <!-- <li><a href="./gallery.html">- Espanish</a></li>
                                             <li><a href="./blog.html">- Blog</a></li>
                                             <li><a href="./single-blog.html">- Blog Details</a></li>
-                                            <li><a href="./contact.html">- Contact</a></li>
-                                            <li><a href="#">- Dropdown</a>
+                                            <li><a href="./contact.html">- Contact</a></li> -->
+                                            <!-- <li><a href="#">- Dropdown</a>
                                                 <ul class="dropdown">
                                                     <li><a href="#">- Dropdown Item</a></li>
                                                     <li><a href="#">- Dropdown Item</a></li>
                                                     <li><a href="#">- Dropdown Item</a></li>
                                                     <li><a href="#">- Dropdown Item</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </li>
-                                    <li><a href="./about.html">About</a></li>
+                                    <!-- <li><a href="./about.html">About</a></li>
                                     <li><a href="./gallery.html">Gallery</a></li>
                                     <li><a href="./blog.html">Blog</a></li>
-                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a href="./contact.html">Contact</a></li> -->
                                 </ul>
 
                                 <!-- Search Icon -->
-                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div>
                             </div>
                             <!-- Nav End -->
                         </div>
@@ -117,11 +124,16 @@
                         <!-- Welcome Text -->
                         <div class="col-12 col-lg-8 col-xl-6">
                             <div class="welcome-text">
-                                <h2 data-animation="bounceInDown" data-delay="900ms">Hello <br>I'm Jackson</h2>
-                                <p data-animation="bounceInDown" data-delay="500ms">I photograph very instinctively. I see how it is taken like that. I do not follow certain styles, philosophies or teachers.</p>
+                                <h2 data-animation="bounceInDown" data-delay="900ms">Hello <br>I'm Matheus</h2>
+                                <p data-animation="bounceInDown" data-delay="500ms">Programmer, Musician and Science
+                                    Lover</p>
                                 <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
-                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">Get a Quote</a>
-                                    <a class="hero-mail-contact" href="mailto:hello.alime@gmail.com">hello.alime@gmail.com</a>
+
+                                    <span style="cursor: pointer" onClick="abrirUrl('https://github.com/matheus3301')"
+                                        class="btn alime-btn mb-3 mb-sm-0 mr-4"><i class="fa fa-github"> </i>
+                                        GitHub</span>
+                                    <a class="hero-mail-contact"
+                                        href="mailto:monteiromatheus.rocha@gmail.com">monteiromatheus.rocha@gmail.com</a>
                                 </div>
                             </div>
                         </div>
@@ -129,245 +141,206 @@
                 </div>
             </div>
 
-            <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/2.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <!-- Welcome Text -->
-                        <div class="col-12 col-lg-8 col-xl-6">
-                            <div class="welcome-text">
-                                <h2 data-animation="bounceInUp" data-delay="100ms">Hello <br>I'm Alime</h2>
-                                <p data-animation="bounceInUp" data-delay="500ms">I photograph very instinctively. I see how it is taken like that. I do not follow certain styles, philosophies or teachers.</p>
-                                <div class="hero-btn-group" data-animation="bounceInUp" data-delay="900ms">
-                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">Get a Quote</a>
-                                    <a class="hero-mail-contact" href="mailto:hello.alime@gmail.com">hello.alime@gmail.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
     <!-- Welcome Area End -->
 
-    <!-- Gallery Area Start -->
-    <div class="alime-portfolio-area section-padding-80 clearfix">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Projects Menu -->
-                    <div class="alime-projects-menu">
-                        <div class="portfolio-menu text-center">
-                            <button class="btn active" data-filter="*">All</button>
-                            <button class="btn" data-filter=".human">Human</button>
-                            <button class="btn" data-filter=".nature">Nature</button>
-                            <button class="btn" data-filter=".country">Country</button>
-                            <button class="btn" data-filter=".video">Video</button>
-                        </div>
+    <!-- About Us Area Start -->
+    <div class="about-us-area section-padding-80-0 clearfix">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="about-us-content mb-80">
+                        <h3 class="wow fadeInUp" data-wow-delay="100ms">A little bit about me</h3>
+                        <div class="line wow fadeInUp" data-wow-delay="200ms"></div>
+                        <p class="wow fadeInUp" data-wow-delay="300ms">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et do sunt explicabo. Nemo enim
+                            ipsam et dolore magnam aliquam quaerat voluptatem.</p>
+                        <p class="wow fadeInUp" data-wow-delay="400ms">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et do sunt explicabo. Nemo enim
+                            ipsam et dolore magnam aliquam quaerat voluptatem.</p>
+                        <a class="btn alime-btn btn-2 mt-30 wow fadeInUp" data-wow-delay="500ms"
+                            href="http://instagram.com/mrocha_oficial">Instagram</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="row alime-portfolio">
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/3.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/3.jpg" class="portfolio-img">+</a>
-                        </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-video-area mb-80 wow fadeInUp" data-wow-delay="100ms">
+                        <img src="img/bg-img/17.jpg" alt="">
+                        <!-- <div class="video-icon">
+                            <a href="https://www.youtube.com/watch?v=sSakBz_eYzQ" class="video-play-btn"><i class="arrow_triangle-right"></i></a>
+                        </div> -->
                     </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp" data-wow-delay="300ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/4.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/4.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/5.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/5.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/6.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/6.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/7.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/7.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp" data-wow-delay="300ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/8.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/8.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="500ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/10.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/10.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/9.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/9.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-6 single_gallery_item video country mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/36.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/36.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="300ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/37.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/37.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/5.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/5.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 text-center wow fadeInUp" data-wow-delay="700ms">
-                    <a href="#" class="btn alime-btn btn-2 mt-15">View More</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Gallery Area End -->
+    <!-- About Us Area End -->
 
-    <!-- Follow Area Start -->
-    <section class="follow-area clearfix">
+    <!-- Why Choose Us Area Start -->
+    <section class="why-choose-us-area bg-gray section-padding-80-0 clearfix">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-heading text-center">
-                        <h2>Follow Instagram</h2>
-                        <p>@Alime_photographer</p>
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                        <h2>Why Choose Me</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Why Choose Area -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="chosse-us-icon">
+                            <i class="material-icons" style="font-size: 1.5em;margin-top: 20%">
+                                code
+                            </i>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur isicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut elit, sed do eiusmod te</p>
+                    </div>
+                </div>
+
+                <!-- Single Why Choose Area -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="chosse-us-icon">
+                            <i class="material-icons" style="font-size: 1.5em;margin-top: 20%">
+                                memory
+                            </i>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur isicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut elit, sed do eiusmod te</p>
+                    </div>
+                </div>
+
+                <!-- Single Why Choose Area -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="chosse-us-icon">
+                            <i class="material-icons" style="font-size: 1.5em;margin-top: 20%">
+                                desktop_mac
+                            </i>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur isicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut elit, sed do eiusmod te</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- Why Choose  us Area End -->
 
-        <!-- Instagram Feed Area -->
-        <div class="instragram-feed-area owl-carousel">
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/11.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
+    <!-- Our Team Area Start -->
+    <section class="our-team-area section-padding-80-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                        <h2>My Knowledges</h2>
+                    </div>
                 </div>
             </div>
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/12.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
+
+            <div class="row">
+                <!-- Team Member Area -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="member-thumb">
+                            <img style="width: 100%;" src="img/stack/java.jpg" alt="Java">
+                        </div>
+                        <h5>Java</h5>
+                        <span>Desktop Applications development using Java Swing</span>
+
+                    </div>
                 </div>
-            </div>
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/13.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
+
+                <!-- Team Member Area -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="member-thumb">
+                            <img style="width: 100%;" src="img/stack/php.png" alt="PHP">
+                        </div>
+                        <h5>PHP</h5>
+                        <span>Web Applications development using PHP(with composer)</span>
+
+                    </div>
                 </div>
-            </div>
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/14.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
+
+                <!-- Team Member Area -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="member-thumb">
+                            <img style="width: 100%;" src="img/stack/node.svg" alt="Java">
+                        </div>
+                        <h5>NodeJS</h5>
+                        <span>Complete Web Services development using Javascript</span>
+
+                    </div>
                 </div>
-            </div>
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/15.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
-                </div>
-            </div>
-            <!-- Single Instagram Item -->
-            <div class="single-instagram-item">
-                <img src="img/bg-img/16.jpg" alt="">
-                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                    <a href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <span>Alime_photographer</span>
-                    </a>
+
+                <!-- Team Member Area -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="member-thumb">
+                            <img style="width: 100%;" src="img/stack/react.svg" alt="React">
+                        </div>
+                        <h5>React</h5>
+                        <span>Web and Android/IOS Native Applications using ReactJS and React Native</span>
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Follow Area End -->
+    <!-- Our Team Area End -->
+
+    <!-- Our Team Area Start -->
+    <section class="our-team-area section-padding-80-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                        <h2>Some GitHub Projects</h2>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $.getJSON("https://api.github.com/users/matheus3301/repos", function (data) {
+                    console.log(data);
+                    $('#projects').html("");
+                    $.each(data, function(key,val){
+                        if(!val.fork){
+                            renderProject(val);
+                        }
+
+                    });
+                    
+                })
+
+                function renderProject(project) {
+                     
+
+                    let card = '<div class="card mb-5 mr-5" style="width: 18rem;"><div class="card-body"><h5 class="card-title">'+project.name+'</h5><h6 class="card-subtitle mb-2 text-muted">'+project.language+'</h6><p class="card-text">'+project.description+'</p> <span style="cursor:pointer" onClick=abrirUrl("'+project.html_url+'") class="card-link"><i class="material-icons">code</i> Repository</span>'+(project.homepage ? '<span style="cursor:pointer" onClick=abrirUrl("'+project.homepage+'") class="card-link"><i class="material-icons">language</i> Web</span>' : '')+'</div></div>';
+                    $("#projects").html($("#projects").html()+card);
+                }
+            </script>
+            <div class="row" id="projects">
+                
+                    <img src="img/loading.gif" alt="Loading" style="width:200px;margin:auto">
+
+            
+                
+            </div>
+        </div>
+    </section>
+    <!-- Our Team Area End -->
+
+
 
     <!-- Footer Area Start -->
     <footer class="footer-area">
@@ -377,21 +350,22 @@
                     <div class="footer-content d-flex align-items-center justify-content-between">
                         <!-- Copywrite Text -->
                         <div class="copywrite-text">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
                         </div>
                         <!-- Footer Logo -->
                         <div class="footer-logo">
-                            <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
+                            <a href="index.html">Matheus Rocha</a>
                         </div>
                         <!-- Social Info -->
-                        <div class="social-info">
+                        <!-- <div class="social-info">
                             <a href="#"><i class="ti-facebook" aria-hidden="true"></i></a>
                             <a href="#"><i class="ti-twitter-alt" aria-hidden="true"></i></a>
                             <a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a>
                             <a href="#"><i class="ti-pinterest" aria-hidden="true"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -401,7 +375,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->
-    <script src="js/jquery.min.js"></script>
     <!-- Popper -->
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap -->
@@ -410,6 +383,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+    <script>
+        function abrirUrl(url) {
+            let win = window.open(url, '_blank');
+            win.focus();
+        }
+    </script>
 
 </body>
 
